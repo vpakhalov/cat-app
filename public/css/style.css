@@ -1,0 +1,241 @@
+/* Общие стили */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    max-width: 800px;
+    margin: 20px auto;
+    color: #333;
+    line-height: 1.6;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 1em;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+table th {
+    background-color: #f2f2f2;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #eee;
+    margin: 20px 0;
+}
+/* КОНЕЦ: Общие стили */
+
+
+/* Стили для форм */
+form p {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"], input[type="date"], select {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button[type="submit"] {
+    padding: 10px 15px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+button[type="submit"]:hover {
+    background-color: #218838;
+}
+
+fieldset {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 15px;
+}
+
+legend {
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+.form-inline {
+    display: inline;
+}
+
+.filter-input-short {
+    width: 80px;
+}
+
+.fathers-select-multiple {
+    height: 120px;
+}
+
+.photo-selector {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.photo-option {
+    cursor: pointer;
+    border: 3px solid transparent;
+    border-radius: 6px;
+    padding: 3px;
+    transition: border-color 0.2s;
+}
+
+.photo-option img {
+    display: block;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.photo-option input[type="radio"]:checked + img {
+    border: 3px solid #007bff;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+}
+
+.photo-option input[type="radio"] {
+    display: none;
+}
+
+.radio-group-container {
+    display: flex;
+    gap: 25px;
+}
+
+.radio-option {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.radio-option label {
+    display: inline;
+    font-weight: normal;
+    margin-bottom: 0;
+}
+
+.radio-option input[type="radio"] {
+    width: auto;
+}
+/* КОНЕЦ: Стили для форм */
+
+
+/* Стили для карточек */
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.cat-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.card-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.card-header h3 {
+    margin: 0 0 10px 0;
+    font-size: 1.25em;
+    color: #0056b3;
+}
+
+.card-body {
+    flex-grow: 1;
+}
+
+.card-body p {
+    margin: 0 0 8px 0;
+}
+
+.card-footer {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+    align-items: center;
+}
+
+.card-photo-wrapper {
+    flex-basis: 150px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-photo {
+    max-width: 100%;
+    max-height: 160px;
+    object-fit: contain;
+    border-radius: 6px;
+    margin: 0;
+    height: auto;
+}
+
+.btn-delete {
+    background-color: #ca2136 !important;
+    color: white;
+    padding: 5px 12px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 0.9em;
+    text-decoration: none;
+}
+.btn-delete:hover {
+    background-color: #b11528 !important;
+}
+
+.no-cats-message {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+}
+/* КОНЕЦ: Стили для карточек */

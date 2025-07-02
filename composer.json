@@ -1,0 +1,20 @@
+{
+  "name": "vpakhalov/cat-app",
+  "description": "Applications for cat management",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Vladislav",
+      "email": "vpakhalov@bk.ru"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "App\\": "src/"
+    }
+  },
+  "require": {
+    "ext-pdo": "*"
+  }
+}

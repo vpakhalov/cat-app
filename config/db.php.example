@@ -1,0 +1,6 @@
+return [
+    'host' => 'localhost',
+    'dbname' => 'cat_shelter',
+    'user' => 'root',
+    'password' => ''
+];
